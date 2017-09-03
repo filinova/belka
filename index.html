@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Скалодром</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -18,45 +20,67 @@
       <li class="page-header__contacts-item page-header__contacts-item--address">Выборгское ш., 220</li>
     </ul>
   </div>
-  <button class="page-header__toggler">
-    <span class="icon-kebab"></span>
+  <button class="page-header__toggle">
+    <span class="icon-fall-out">Кнопка</span>
   </button>
   <div class="page-header__main">
-    <a href="#" class="logo"><img src="" alt=""></a>
-    <a href="" class="page-header__buy btn">Купить билет</a>
+    <a href="#" class="logo"><img src="img/insta-logo.png" alt=""></a>
+    <button class="btn page-header__buy">
+      <a href="#" >Купить билет</a>
+    </button>
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="" class="main-nav__link">Пункт меню</a>
+          <a href="" class="main-nav__link">Трассы</a>
         </li>
         <li class="main-nav__item">
-          <a href="" class="main-nav__link">Пункт меню</a>
+          <a href="" class="main-nav__link">Акции</a>
         </li>
         <li class="main-nav__item">
-          <a href="" class="main-nav__link">Пункт меню</a>
+          <a href="" class="main-nav__link">Цены</a>
         </li>
         <li class="main-nav__item">
-          <a href="" class="main-nav__link">Пункт меню</a>
+          <a href="" class="main-nav__link">Отзывы</a>
         </li>
         <li class="main-nav__item">
           <a href="" class="main-nav__link">Пункт меню</a>
         </li>
       </ul>
     </nav>
+
+          <div class="page-header__menu-socials">
+            <ul class="page-header__menu-social-list">
+              <li class="page-header__menu-socials">
+                <a class="page-header__menu-socials--tw" href="#"></a>
+              </li>
+              <li class="page-header__menu-socials">
+                <a class="page-header__menu-socials--vk" href="#"></a>
+              </li>
+              <li class="page-header__menu-socials">
+                <a class="page-header__menu-socials--insta" href="#"></a>
+              </li>
+            </ul>
+          </div>
+
+
   </div>
 </header>
 
 <main>
   <section class="promo">
-    <h1 class="promo">Скалодром</h1>
-    <div class="promo__descr promo__descr--view-xs">
-      <p>Заберись на вершину, не уезжая в горы!</p>
-    </div>
-    <div class="promo__descr">
-      <p>Заберись на вершину, не уезжая в горы!Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня.Bключает в себя 2 детские трассы и 3 взрослые.Cкалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности.</p>
-    </div>
-    <div class="promo_buy">
-      <a href="" class="btn">Купить билет</a>
+    <div class="container">
+      <h1 class="promo__title">Скалодром</h1>
+      <div class="promo__descr">
+        <p class="promo__descr--view-xs">Заберись на вершину, не уезжая в горы!</p>
+      </div>
+      <div class="promo__descr">
+        <p class="promo__descr--view-md">Заберись на вершину, не уезжая в горы!Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня.Bключает в себя 2 детские трассы и 3 взрослые.Cкалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности.</p>
+      </div>
+      <div class="promo_buy">
+        <button class="btn promo_buy--btn">
+          <a href="">Купить билет</a>
+        </button>
+      </div>
     </div>
   </section>
 
@@ -295,6 +319,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="page-footer">
     <div class="page-footer__inner">
