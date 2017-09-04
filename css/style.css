@@ -188,3 +188,22 @@
   text-decoration: none;
   color: #000;
 }
+
+/*trails*/
+
+.trails {
+  background-image: url(../img/bg_trails_320.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.trails__title {
+  color : #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*@media (min-width: 768px) {
+
+}*/
