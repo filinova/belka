@@ -12,8 +12,10 @@
 }
 
 .container {
-  width: 294px;
+  width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px;
 }
 
 @media (min-width: 768px) {
@@ -144,18 +146,25 @@
 /*promo*/
 
 .promo {
-  height: 400px;
   background-image: url(../img/bg_promo.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
+  padding-top: 40px;
+  background-size: cover;
+  padding-bottom: 40px;
+}
+
+.promo__inner {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .promo__title {
   font-size: 38px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 30px;
-  padding-top: 40px;
+/*  padding-bottom: 30px;
+  padding-top: 40px;*/
 }
 
 .promo__descr--view-xs {
@@ -164,7 +173,7 @@
   font-family: 'OpenSans';
   font-weight: normal;
   font-size: 18px;
-  width: 210px;
+  /*width: 210px;*/
   line-height: 35px;
 }
 .promo__descr--view-md {
@@ -195,15 +204,115 @@
   background-image: url(../img/bg_trails_320.png);
   background-repeat: no-repeat;
   background-position: top;
+  padding-bottom: 130px;
 }
 
 .trails__title {
-  color : #fff;
+  color : #fefefe;
   font-size: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-bottom: 65px;
 }
 
 /*@media (min-width: 768px) {
 
 }*/
+
+.trail-card {
+  width: 215px;
+  height: 320px;
+  background-color: #56616b;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.trail-card__title{
+  color: #c7c7d3;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.trail-card__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.trail-card__list-item {
+  font-family: "OpenSans";
+  color: #f9f9f9;
+  font-size: 16px;
+}
+
+.trail-card__visual {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .trail-card__visual {
+  display: block;
+  }
+}
+
+.trail-card__descr {
+  font-family: "OpenSans";
+  color: #f9f9f9;
+  font-size: 16px;
+}
+
+/*offers*/
+
+.offer__inner {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;  
+}
+
+.offer__title {
+  position: absolute;
+  top: -100px;
+  left: 85px;
+  font-size: 38px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.offer-card {
+  position: relative;
+  height: 255px;
+  width: 295px;
+  margin: 5px 0px;
+  background-repeat: no-repeat;
+}
+
+.offer-card__descr {
+  position: absolute;
+  bottom: 25px;
+  left: 15px;
+  font-size: 24px;
+  color: #fefefe;
+}
+
+/*about*/
+.about__inner {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.about__title {
+  color : #fefefe;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 65px;
+}
+
+.about__descr {
+  font-family: "OpenSans";
+  font-size: 14px;
+  color: #fffffe;
+}
