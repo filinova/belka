@@ -245,6 +245,28 @@
   font-size: 16px;
 }
 
+.trail-card__list-item:before {
+  content: '';
+  display: block;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.trail-card__list-item-mountain:before {
+  width: 35px;
+  height: 22px;
+  background-position: -26px -79px;
+  margin: auto;
+}
+
+.trail-card__list-item-avatar:before {
+  width: 24px;
+  height: 27px;
+  background-position: -5px -5px;
+  margin: auto;
+}
+
 .trail-card__visual {
   display: none;
 }
@@ -315,4 +337,82 @@
   font-family: "OpenSans";
   font-size: 14px;
   color: #fffffe;
+}
+
+.about__descr:before {
+  content: '';
+  display: block;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.about__descr-rope:before {
+  width: 57px;
+  height: 58px;
+  background-position: -197px -5px;
+  margin: auto;
+}
+
+.about__descr-sign:before {
+  width: 57px;
+  height: 58px;
+  background-position: -197px -73px;
+  margin: auto;
+}
+
+.about__descr-question:before {
+  width: 57px;
+  height: 58px;
+  background-position: -104px -114px;
+  margin: auto;
+}
+
+/*gallery*/
+
+.gallery__wrap {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.gallery-item:before {
+  content: '';
+  display: block;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.gallery-item:before {
+  width: 21px;
+  height: 41px;
+  background-position: -5px -114px;
+  margin: auto;
+}
+.gallery-item:after {
+  width: 23px;
+  height: 41px;
+  background-position: -71px -79px;
+  margin: auto;
+}
+
+/*prices*/
+.prices__inner {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.price__buy {
+  width: 200px;
+  height: 50px;
+  background-color: #932626;
+  color: #e9d3d3;
+  text-transform: uppercase;
+  padding: 15px 35px 20px 40px;
+}
+
+/*review*/
+.review__inner {
+  padding-left: 15px;
+  padding-right: 15px;
 }

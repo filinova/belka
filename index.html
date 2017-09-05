@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Скалодром</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="../OwlCarousel/owl.carousel.min.css">
-
-  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-  
-  <link rel="stylesheet" href="../OwlCarousel/owl.theme.default.min.css">
-
 </head>
 <body>
   
@@ -31,7 +25,7 @@
     <span class="icon-fall-out">Кнопка</span>
   </button>
   <div class="page-header__main">
-    <a href="#" class="logo"><img src="img/insta-logo.png" alt=""></a>
+    <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
     <button class="btn page-header__buy">
       <a href="#" >Купить билет</a>
     </button>
@@ -93,94 +87,96 @@
   <div class="trails__inner">
     <h2 class="trails__title">Трассы</h2>
     <div class="trails__row">
-      <div class="trails__item">
-        <div class="trail-card">
-          <div class="trail-card__header">
-            <h3 class="trail-card__title">Трасса #1</h3>
-            <ul class="trail-card__list">
-              <li class="trail-card__list-item">Высота 15 м.</li>
-              <li class="trail-card__list-item">Возраст 13+</li>
-            </ul>
-          </div>
-          <div class="trail-card__visual">
-            <img class="trail-card__photo" src="  " alt="">
-          </div>
-          <div class="trail-card__footer">
-            <p class="trail-card__descr">Трасса для опытных скалолазов.Требуется наличие хорошей физ. подготовки</p>
+      <div class="slick__wrap">
+        <div class="trails__item">
+          <div class="trail-card">
+            <div class="trail-card__header">
+              <h3 class="trail-card__title">Трасса #1</h3>
+              <ul class="trail-card__list">
+                <li class="trail-card__list-item trail-card__list-item-mountain">Высота 15 м.</li>
+                <li class="trail-card__list-item trail-card__list-item-avatar">Возраст 13+</li>
+              </ul>
+            </div>
+            <div class="trail-card__visual">
+              <img class="trail-card__photo" src="  " alt="">
+            </div>
+            <div class="trail-card__footer">
+              <p class="trail-card__descr">Трасса для опытных скалолазов.Требуется наличие хорошей физ. подготовки</p>
+            </div>
           </div>
         </div>
-      </div>
 
-<!--       <div class="trails__item">
-        <div class="trail-card">
-          <div class="trail-card__header">
-            <h3 class="trail-card__title">Трасса #2</h3>
-            <ul class="trail-card__list">
-              <li class="trail-card__list-item">Высота 4 м.</li>
-              <li class="trail-card__list-item">Возраст 4+</li>
-            </ul>
-          </div>
-          <div class="trail-card__visual">
-            <img class="trail-card__photo" src="  " alt="">
-          </div>
-          <div class="trail-card__footer">
-            <p class="trail-card__descr">Для людей с разной физ. подготовкой Различные зацепы и рельефы стены.</p>
+        <div class="trails__item">
+          <div class="trail-card">
+            <div class="trail-card__header">
+              <h3 class="trail-card__title">Трасса #2</h3>
+              <ul class="trail-card__list">
+                <li class="trail-card__list-item">Высота 4 м.</li>
+                <li class="trail-card__list-item">Возраст 4+</li>
+              </ul>
+            </div>
+            <div class="trail-card__visual">
+              <img class="trail-card__photo" src="  " alt="">
+            </div>
+            <div class="trail-card__footer">
+              <p class="trail-card__descr">Для людей с разной физ. подготовкой Различные зацепы и рельефы стены.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="trails__item">
-        <div class="trail-card">
-          <div class="trail-card__header">
-            <h3 class="trail-card__title">Трасса #3</h3>
-            <ul class="trail-card__list">
-              <li class="trail-card__list-item">Высота 10 м.</li>
-              <li class="trail-card__list-item">Возраст 13+</li>
-            </ul>
-          </div>
-          <div class="trail-card__visual">
-            <img class="trail-card__photo" src="  " alt="">
-          </div>
-          <div class="trail-card__footer">
-            <p class="trail-card__descr">Трасса подойтет как для профессионалов,так и для любителей. Необходима хорошая физ. подготовка.</p>
+        <div class="trails__item">
+          <div class="trail-card">
+            <div class="trail-card__header">
+              <h3 class="trail-card__title">Трасса #3</h3>
+              <ul class="trail-card__list">
+                <li class="trail-card__list-item">Высота 10 м.</li>
+                <li class="trail-card__list-item">Возраст 13+</li>
+              </ul>
+            </div>
+            <div class="trail-card__visual">
+              <img class="trail-card__photo" src="  " alt="">
+            </div>
+            <div class="trail-card__footer">
+              <p class="trail-card__descr">Трасса подойтет как для профессионалов,так и для любителей. Необходима хорошая физ. подготовка.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="trails__item">
-        <div class="trail-card">
-          <div class="trail-card__header">
-            <h3 class="trail-card__title">Трасса #4</h3>
-            <ul class="trail-card__list">
-              <li class="trail-card__list-item">Высота 3 м.</li>
-              <li class="trail-card__list-item">Возраст 4+</li>
-            </ul>
-          </div>
-          <div class="trail-card__visual">
-            <img class="trail-card__photo" src="  " alt="">
-          </div>
-          <div class="trail-card__footer">
-            <p class="trail-card__descr">Самая невысокая трасса. Специальные  зацепы для детей.</p>
-          </div>
-        </div>
-      </div>
-      <div class="trails__item">
-        <div class="trail-card">
-          <div class="trail-card__header">
-            <h3 class="trail-card__title">Трасса #5</h3>
-            <ul class="trail-card__list">
-              <li class="trail-card__list-item">Высота 8 м.</li>
-              <li class="trail-card__list-item">Возраст 13+</li>
-            </ul>
-          </div>
-          <div class="trail-card__visual">
-            <img class="trail-card__photo" src="  " alt="">
-          </div>
-          <div class="trail-card__footer">
-            <p class="trail-card__descr">Средняя высота и сложность.Физ. подготовка не обязательна.</p>
+        <div class="trails__item">
+          <div class="trail-card">
+            <div class="trail-card__header">
+              <h3 class="trail-card__title">Трасса #4</h3>
+              <ul class="trail-card__list">
+                <li class="trail-card__list-item">Высота 3 м.</li>
+                <li class="trail-card__list-item">Возраст 4+</li>
+              </ul>
+            </div>
+            <div class="trail-card__visual">
+              <img class="trail-card__photo" src="  " alt="">
+            </div>
+            <div class="trail-card__footer">
+              <p class="trail-card__descr">Самая невысокая трасса. Специальные  зацепы для детей.</p>
+            </div>
           </div>
         </div>
-      </div> -->
+        <div class="trails__item">
+          <div class="trail-card">
+            <div class="trail-card__header">
+              <h3 class="trail-card__title">Трасса #5</h3>
+              <ul class="trail-card__list">
+                <li class="trail-card__list-item">Высота 8 м.</li>
+                <li class="trail-card__list-item">Возраст 13+</li>
+              </ul>
+            </div>
+            <div class="trail-card__visual">
+              <img class="trail-card__photo" src="  " alt="">
+            </div>
+            <div class="trail-card__footer">
+              <p class="trail-card__descr">Средняя высота и сложность.Физ. подготовка не обязательна.</p>
+            </div>
+          </div>
+        </div> 
+        </div>
       </div>
     </div>
   </section>
@@ -222,13 +218,13 @@
     <h3 class="about__title">У нас</h3>
       <div class="about__row">
         <div class="about__col about__col--equipment">
-          <p class="about__descr">Альпинистское снаряжение  и страховочные устройства французской компании Petzl</p>
+          <p class="about__descr about__descr-rope">Альпинистское снаряжение  и страховочные устройства французской компании Petzl</p>
         </div>
         <div class="about__col about__col--poiner">
-          <p class="about__descr">Понятная маркировка трасс (ламинированные таблички и зацепки определенного цвета для каждой трассы)</p>
+          <p class="about__descr about__descr-sign">Понятная маркировка трасс (ламинированные таблички и зацепки определенного цвета для каждой трассы)</p>
         </div>
         <div class="about__col about__col--question">
-          <p class="about__descr">На территории скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос!</p>
+          <p class="about__descr about__descr-question">На территории скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос!</p>
         </div>
       </div>
     </div>
@@ -239,7 +235,7 @@
         <div class="gallery__row">
           <div class="gallery__col">
             <div class="gallery-item">
-              <img src="" alt="">
+              <img src="img/gallery1.png" alt="gallery-photo">
               <div class="gallery__wrap">
                 <a href="#" class="gallery__wrap"></a>
               </div>
@@ -279,7 +275,7 @@
         </table>
       </div>
       <div class="price__row">
-        <a href="" class="price__buy">Купить билет</a>
+        <button class="btn price__buy">Купить билет</button>
         <a href="" class="">Техника безопасности (PDF)</a>
       </div>
     </div>
@@ -351,7 +347,8 @@
   </footer>
 </main>
 
-<script src="owlcarousel/owl.carousel.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
