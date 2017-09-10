@@ -111,8 +111,8 @@
             <div class="trail-card__header">
               <h3 class="trail-card__title">Трасса #2</h3>
               <ul class="trail-card__list">
-                <li class="trail-card__list-item">Высота 4 м.</li>
-                <li class="trail-card__list-item">Возраст 4+</li>
+                <li class="trail-card__list-item trail-card__list-item-mountain">Высота 4 м.</li>
+                <li class="trail-card__list-item trail-card__list-item-avatar">Возраст 4+</li>
               </ul>
             </div>
             <div class="trail-card__visual">
@@ -129,8 +129,8 @@
             <div class="trail-card__header">
               <h3 class="trail-card__title">Трасса #3</h3>
               <ul class="trail-card__list">
-                <li class="trail-card__list-item">Высота 10 м.</li>
-                <li class="trail-card__list-item">Возраст 13+</li>
+                <li class="trail-card__list-item trail-card__list-item-mountain">Высота 10 м.</li>
+                <li class="trail-card__list-item trail-card__list-item-avatar">Возраст 13+</li>
               </ul>
             </div>
             <div class="trail-card__visual">
@@ -147,8 +147,8 @@
             <div class="trail-card__header">
               <h3 class="trail-card__title">Трасса #4</h3>
               <ul class="trail-card__list">
-                <li class="trail-card__list-item">Высота 3 м.</li>
-                <li class="trail-card__list-item">Возраст 4+</li>
+                <li class="trail-card__list-item trail-card__list-item-mountain">Высота 3 м.</li>
+                <li class="trail-card__list-item trail-card__list-item-avatar">Возраст 4+</li>
               </ul>
             </div>
             <div class="trail-card__visual">
@@ -164,8 +164,8 @@
             <div class="trail-card__header">
               <h3 class="trail-card__title">Трасса #5</h3>
               <ul class="trail-card__list">
-                <li class="trail-card__list-item">Высота 8 м.</li>
-                <li class="trail-card__list-item">Возраст 13+</li>
+                <li class="trail-card__list-item trail-card__list-item-mountain">Высота 8 м.</li>
+                <li class="trail-card__list-item trail-card__list-item-avatar">Возраст 13+</li>
               </ul>
             </div>
             <div class="trail-card__visual">
@@ -275,24 +275,26 @@
         </table>
       </div>
       <div class="price__row">
-        <button class="btn price__buy">Купить билет</button>
-        <a href="" class="">Техника безопасности (PDF)</a>
+        <div class="price__info-btns">
+          <button class="btn price__buy">Купить билет</button>
+          <a href="#" class="pdf-link">Техника безопасности (PDF)</a>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="review">
     <div class="review__inner">
-      <h3 class="review__title">Отзывы</h3>
       <div class="review__item">
-        <img class="review__item-avatar" src="#" alt="">
+        <h3 class="review__title">Отзывы</h3>
+        <img class="review__item-avatar" src="img/review1.png" alt="">
         <span class="review__item-name">Алексей</span>
         <span class="review__item-name-descr">Скалолаз-любитель.</span>
         <ul class="review__social-icons">
-          <li>
+          <li class="review__social-icons-item">
             <a class="review__social-icons review__social-icons--insta" href="#"></a>
           </li>
-          <li>
+          <li class="review__social-icons-item">
             <a  class="review__social-icons review__social-icons--vk" href="#"></a>
           </li>
         </ul>
@@ -305,45 +307,59 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__inner">
-      <div class="page-footer__row">
-        <div class="page-footer__col">
-          <div class="page-footer__contacts">
-            <span class="page-footer__contacts">Выборгское ш., 220</span>
-            <span class="page-footer__contacts">
-            <a href="tel:+78129997788"></a>8(812)999-77-88</span>
-          </div>
-          <div class="page-footer__menu">
-            <ul>
-              <li class="page-footer__menu"><a href="#"></a></li>
-              <li class="page-footer__menu"><a href="#"></a></li>
-              <li class="page-footer__menu"><a href="#"></a></li>
-              <li class="page-footer__menu"><a href="#"></a></li>
-              <li class="page-footer__menu"><a href="#"></a></li>
-            </ul>
-          </div>
-          <div class="page-footer__menu-socials">
-            <ul>
-              <li class="page-footer__menu-socials">
-                <a class="page-footer__menu-socials--tw" href="#"></a>
-              </li>
-              <li class="page-footer__menu-socials">
-                <a class="page-footer__menu-socials--vk" href="#"></a>
-              </li>
-              <li class="page-footer__menu-socials">
-                <a class="page-footer__menu-socials--insta" href="#"></a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__narrow">
-            <img src="#" alt="">
+    <div class="page-footer__row">
+          <div class="page-footer__col">
+            <div class="page-footer__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.2731670427747!2d30.268773315487547!3d60.076844657904786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963547d7977ee9%3A0x303e6d5c12d21ac8!2z0JLRi9Cx0L7RgNCz0YHQutC-0LUg0YguLCAyMjAsINCf0LDRgNCz0L7Qu9C-0LLQviwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NDM2Mg!5e0!3m2!1sru!2sru!4v1505045568060" width="320" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
-        <div class="page-footer__col">
-          <div class="page-footer__map"></div>
+        <div class="page-footer__inner">
+          <div class="page-footer__row">
+            <div class="page-footer__col">
+              <div class="page-footer__contacts-wrap">
+                <span class="page-footer__contacts page-footer__contacts-address">Выборгское ш., 220</span>
+                <span class="page-footer__contacts page-footer__contacts-phone">
+                <a href="tel:+78129997788"></a>8(812)999-77-88</span>
+              </div>
+              <div class="page-footer__menu-list">
+                <ul>
+                  <li class="page-footer__menu-item">
+                    <a href="#">Трассы</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a href="#">Акции</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a href="#">Цены</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a href="#">Отзывы</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="page-footer__menu-socials">
+                <ul>
+                  <li class="page-footer__menu-socials page-footer__menu-socials--tw">
+                    <a class="" href="#"></a>
+                  </li>
+                  <li class="page-footer__menu-socials page-footer__menu-socials--vk">
+                    <a class="" href="#"></a>
+                  </li>
+                  <li class="page-footer__menu-socials page-footer__menu-socials--insta">
+                    <a class="" href="#"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="page-footer__narrow">
+                <img src="#" alt="">
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
   </footer>
 </main>
 
