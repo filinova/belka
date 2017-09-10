@@ -16,7 +16,7 @@
       <li class="page-header__contacts-item page-header__contacts-item--clock">24 часа
       </li>
       <li class="page-header__contacts-item page-header__contacts-item--phone">
-        <a href="tel:+78129998877">8 812 999 88 77</a>
+        <a class="page-header__contacts-item--phone-link" href="tel:+78129998877">8 812 999 88 77</a>
       </li>
       <li class="page-header__contacts-item page-header__contacts-item--address">Выборгское ш., 220</li>
     </ul>
@@ -44,7 +44,7 @@
           <a href="" class="main-nav__link">Отзывы</a>
         </li>
         <li class="main-nav__item">
-          <a href="" class="main-nav__link">Пункт меню</a>
+          <a href="" class="main-nav__link">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -217,13 +217,13 @@
     <div class="about__inner">
     <h3 class="about__title">У нас</h3>
       <div class="about__row">
-        <div class="about__col about__col--equipment">
+        <div class="about__col">
           <p class="about__descr about__descr-rope">Альпинистское снаряжение  и страховочные устройства французской компании Petzl</p>
         </div>
-        <div class="about__col about__col--poiner">
+        <div class="about__col">
           <p class="about__descr about__descr-sign">Понятная маркировка трасс (ламинированные таблички и зацепки определенного цвета для каждой трассы)</p>
         </div>
-        <div class="about__col about__col--question">
+        <div class="about__col">
           <p class="about__descr about__descr-question">На территории скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос!</p>
         </div>
       </div>
@@ -233,27 +233,29 @@
 <div class="gallery">
   <div class="gallery__wrap">
         <div class="gallery__row">
-          <div class="gallery__col">
-            <div class="gallery-item">
-              <img src="img/gallery1.png" alt="gallery-photo">
-              <div class="gallery__wrap">
-                <a href="#" class="gallery__wrap"></a>
+          <div class="slick__wrap">
+            <div class="gallery__col">
+              <div class="gallery-item">
+                <img src="img/gallery1.png" alt="gallery-photo">
+                <div class="gallery__wrap">
+                  <a href="#" class="gallery__wrap"></a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="gallery__col">
-            <div class="gallery-item">
-              <img src="" alt="">
-              <div class="gallery__wrap">
-                <a href="#" class="gallery__wrap"></a>
+            <div class="gallery__col">
+              <div class="gallery-item">
+                <img src="img/gallery2.png" alt="gallery-photo">
+                <div class="gallery__wrap">
+                  <a href="img/gallery2.png" class="gallery__wrap"></a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="gallery__col">
-            <div class="gallery-item">
-              <img src="" alt="">
-              <div class="gallery__wrap">
-                <a href="#" class="gallery__wrap"></a>
+            <div class="gallery__col">
+              <div class="gallery-item">
+                <img src="img/gallery3.png" alt="gallery-photo">
+                <div class="gallery__wrap">
+                  <a href="img/gallery3.png" class="gallery__wrap"></a>
+                </div>
               </div>
             </div>
           </div>
@@ -264,42 +266,88 @@
 
   <section class="prices">
     <div class="prices__inner">
-      <div class="price__row">
-        <table class="price__table">
-          
-        </table>
-      </div>
-      <div class="price__row">
-        <table class="price__table">
-          
-        </table>
-      </div>
-      <div class="price__row">
-        <div class="price__info-btns">
-          <button class="btn price__buy">Купить билет</button>
-          <a href="#" class="pdf-link">Техника безопасности (PDF)</a>
+      <h3 class="price__title">Цены</h3>
+        <div class="price__row">
+          <div class="price__tabs">
+            <div class="price__tab-age">
+              <span>Выберите возраст</span>
+            </div>
+            <div class="price__tab-place">
+              <span>Выберите место</span>
+            </div>
+            <div class="price__tab-time">
+              <span>Выберите место</span>
+            </div>
+            <div class="price__tab-fin-price">
+              <span>Стоимость абонемента 0₽</span>
+            </div>
+            <div class="price__tab-info">
+              <span>Персональный оператор парка 600 ₽ /час</span><br>
+              <span>Каждый дополнительный час 500 ₽</span>
+            </div>
+          </div>
+        <div class="price__row">
+          <div class="price__info-btns">
+            <button class="btn price__buy">Купить билет</button>
+            <a href="#" class="pdf-link">Техника безопасности (PDF)</a>
+          </div>
         </div>
-      </div>
     </div>
   </section>
 
   <section class="review">
     <div class="review__inner">
-      <div class="review__item">
+      <div class="review__block">
         <h3 class="review__title">Отзывы</h3>
-        <img class="review__item-avatar" src="img/review1.png" alt="">
-        <span class="review__item-name">Алексей</span>
-        <span class="review__item-name-descr">Скалолаз-любитель.</span>
-        <ul class="review__social-icons">
-          <li class="review__social-icons-item">
-            <a class="review__social-icons review__social-icons--insta" href="#"></a>
-          </li>
-          <li class="review__social-icons-item">
-            <a  class="review__social-icons review__social-icons--vk" href="#"></a>
-          </li>
-        </ul>
-        <div class="review__text">
-          <p class="review__text">Интересные трассы, вкусная еда и самые приветливые тренера!</p>
+        <div class="slick__wrap">
+          <div class="review__item">
+            <img class="review__item-avatar" src="img/review1.png" alt="">
+            <span class="review__item-name">Алексей</span>
+            <span class="review__item-name-descr">Скалолаз-любитель.</span>
+            <ul class="review__social-icons">
+              <li class="review__social-icons-item">
+                <a class="review__social-icons review__social-icons--insta" href="#"></a>
+              </li>
+              <li class="review__social-icons-item">
+                <a  class="review__social-icons review__social-icons--vk" href="#"></a>
+              </li>
+            </ul>
+            <div class="review__text">
+              <p class="review__text">Интересные трассы, вкусная еда и самые приветливые тренера!</p>
+            </div>
+          </div>
+          <div class="review__item">
+            <img class="review__item-avatar" src="img/review2.png" alt="">
+            <span class="review__item-name">Мария</span>
+            <span class="review__item-name-descr">Студентка.</span>
+            <ul class="review__social-icons">
+              <li class="review__social-icons-item">
+                <a class="review__social-icons review__social-icons--insta" href="#"></a>
+              </li>
+              <li class="review__social-icons-item">
+                <a  class="review__social-icons review__social-icons--vk" href="#"></a>
+              </li>
+            </ul>
+            <div class="review__text">
+              <p class="review__text">Лучший скалодром в городе!</p>
+            </div>
+          </div>
+          <div class="review__item">
+            <img class="review__item-avatar" src="img/review3.png" alt="">
+            <span class="review__item-name">Екатерина</span>
+            <span class="review__item-name-descr">Мама троих детей.</span>
+            <ul class="review__social-icons">
+              <li class="review__social-icons-item">
+                <a class="review__social-icons review__social-icons--insta" href="#"></a>
+              </li>
+              <li class="review__social-icons-item">
+                <a  class="review__social-icons review__social-icons--vk" href="#"></a>
+              </li>
+            </ul>
+            <div class="review__text">
+              <p class="review__text">Парк «BELKA» - отличная альтернатива наскучившим походам в кино и кафе.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
