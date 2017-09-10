@@ -288,13 +288,13 @@
   list-style-type: none;
 }
 
-.trail-card__list-item {
+.trail-card__item {
   font-family: "OpenSans";
   color: #f9f9f9;
   font-size: 16px;
 }
 
-.trail-card__list-item:before {
+.trail-card__item:before {
   content: '';
   display: block;
   background-image: url(../img/spritesheet.png);
@@ -302,14 +302,14 @@
   vertical-align: middle;
 }
 
-.trail-card__list-item-mountain:before {
+.trail-card__icon--mountain:before {
   width: 35px;
   height: 22px;
   background-position: -26px -79px;
   margin: auto;
 }
 
-.trail-card__list-item-avatar:before {
+.trail-card__icon--avatar:before {
   width: 24px;
   height: 27px;
   background-position: -5px -5px;
