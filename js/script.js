@@ -36,11 +36,9 @@ $(document).ready(function(){
     }
   });
     $('.review__slick').slick({
-    
   });
 
     $('.trails__slick').slick({
-    
   });
 
 });
