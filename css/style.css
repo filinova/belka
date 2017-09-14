@@ -422,6 +422,12 @@
   width: 295px;
   margin: 5px 0px;
   background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.offer__visual {
+  position: absolute;
+  transform: translateX(-50%)
 }
 
 .offer__photo {
@@ -433,12 +439,28 @@
     display: block;
     width: 100%;
   },
+  .offer__visual {
+    left: 50%;
+  },
   .offer__photo {
     display: block;
   },
   .offer__photo--mobile {
     display: none;
   }
+}
+
+@media (min-width: 1200px) {
+  .offer__inner {
+  display: flex;
+    },
+
+  .offer-card {
+    width: 360px;
+    justify-content: space-between;
+  }
+
+
 }
 
 .offer-card__descr {
@@ -451,6 +473,8 @@
   color: #fefefe;
 }
 
+
+
 /*about*/
 .about__inner {
   padding-left: 15px;
@@ -460,6 +484,10 @@
 .about__row {
   background-color: rgba(43, 17, 67, 0.7);
   padding-bottom: 48px;
+}
+
+.about__item {
+  padding-bottom: 37px;
 }
 
 .about__title {
@@ -492,7 +520,6 @@
 .about__icon {
   display: inline-block;
   width: 20%;
-  padding-left: 15px;
   vertical-align: middle;
 }
 
@@ -503,9 +530,27 @@
 
 .about__text {
   display: inline-block;
-  padding-right: 15px;
   vertical-align: middle;
-  width: 66%;
+  width: 192px;
+}
+
+@media (min-width: 768px) {
+
+  .about__wrap {
+    display: flex;
+    justify-content: space-between;
+  },
+  .about__icon {
+    display: block;
+    text-align: center;
+  },
+  .about__text {
+    display: block;
+  },
+  .about__inner {
+    width: 100%;
+  }
+
 }
 
 /*gallery*/
