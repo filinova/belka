@@ -2,6 +2,7 @@
 $(document).ready(function(){
   var gallery = $('.gallery__slick');
 
+
   function slickUp(val) {
     $(val).slick({
       mobileFirst: true,
@@ -35,7 +36,24 @@ $(document).ready(function(){
     
     }
   });
-    $('.review__slick').slick({
+
+
+
+  $('.review__slick').slick({
+    mobileFirst: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      }
+    ]
   });
 
     $('.trails__slick').slick({
